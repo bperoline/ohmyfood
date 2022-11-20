@@ -16,8 +16,10 @@
             </div>
 
             <div class="tr">
-                <h1>Réservez le menu qui vous convient</h1>
-                <div class="texte-tr">Découvrez des restaurants d'exception, sélectionnés par nos soins.</div>
+                <h1 class="c1h1">Réservez le menu qui</h1>
+                <h1 class="c2h1">vous convient</h1>
+                <div class="texte-tr-un">Découvrez des restaurants d'exception,</div>
+                <div class="texte-tr-deux">sélectionnés par nos soins.</div>
                 <a href="#restaurant" id="explore">Explorer nos restaurants</a>
             </div>
         </header>
@@ -26,19 +28,19 @@
             <section class="s-un">
                 <h2>Fonctionnement</h2>
                 <ul>
-                    <li>
+                    <li class="li-s-un">
                         <i class="fa-solid fa-1 nombre un"></i>
                         <i class="fa-solid fa-mobile-screen-button tlm"></i>
                         <div class="fonction">Choisissez un restaurant</div>
                     </li>
 
-                    <li>
+                    <li class="li-s-un">
                         <i class="fa-solid fa-2 nombre deux"></i>
                         <i class="fa-solid fa-list-ul tlm"></i>
                         <div class="fonction">Composez votre menu</div>
                     </li>
 
-                    <li>
+                    <li class="li-s-un">
                         <i class="fa-solid fa-3 nombre trois"></i>
                         <i class="fa-solid fa-store tlm"></i>
                         <div class="fonction">Dégustez au restaurant</div>
@@ -49,57 +51,73 @@
             </section>
 
             <section class="s-deux">
-                <h2 id="restaurant">Restaurants</h2>
+                <h2 id="t-restaurant">Restaurants</h2>
 
                 <div>
-                    <span>Nouveau</span>
-                    <a href="menu/menu_palette.html">
-                        <article class="carte_restaurants">
-                            <div class="carte-image"><img class="img_restau" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Palette"></div>
-                            <div class="carte-corps">
-                                <h3 class="carte-titre">La palette du goût</h3>
-                                <p class="carte-legende">Ménilmontant</p>
-                                <div class="coeur"></div>
-                            </div>
-                        </article>
-                    </a>
+                    <div class="restaurant">
+                        <a href="menu/menu_palette.html">
+                            <article class="carte_restaurants">
+                                <div class="carte-image">
+                                    <img class="img_restau" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Palette">
+                                    <div class="nv">Nouveau</div>
+                                </div>
+                                <div class="carte-corps">
+                                    <div class="pl-coeur">
+                                        <h3 class="carte-titre">La palette du goût</h3>
+                                        <i class="fa-regular fa-heart coeur"></i>
+                                    </div>
+                                    <p class="carte-legende">Ménilmontant</p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
                 </div>
 
                 <div>
-                    <span>Nouveau</span>
-                    <a href="#menu/menu_enchantee">
-                        <article class="carte_restaurants">
-                            <div class="carte-image"><img class="img_restau" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Enchantée"></div>
-                            <div class="carte-corps">
-                                <h3 class="carte-titre">La note enchantée</h3>
-                                <div class="carte-legende">Charonne</div>
-                                <div class="coeur"></div>
-                            </div>
-                        </article>
-                    </a>
+                    <div class="restaurant">
+                        <a href="menu/menu_enchantee.html">
+                            <article class="carte_restaurants">
+                                <div class="carte-image">
+                                    <img class="img_restau" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Enchantée">
+                                    <div class="nv">Nouveau</div>
+                                </div>
+                                <div class="carte-corps">
+                                    <div class="pl-coeur">
+                                        <h3 class="carte-titre">La note enchantée</h3>
+                                        <i class="fa-regular fa-heart coeur"></i>
+                                    </div>
+                                    <div class="carte-legende">Charonne</div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
                 </div>
 
-                <div>
-                    <a href="#menu/menu_francaise">
+                <div class="restaurant">
+                    <a href="menu/menu_francaise.html">
                         <article class="carte_restaurants">
                             <div class="carte-image"><img class="img_restau" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Française"></div>
                             <div class="carte-corps">
-                                <h3 class="carte-titre">À la française</h3>
+                                <div class="pl-coeur">
+                                    <h3 class="carte-titre">À la française</h3>
+                                    <i class="fa-regular fa-heart coeur"></i>
+                                </div>
                                 <div class="carte-legende">Cité Rouge</div>
-                                <div class="coeur"></div>
                             </div>
                         </article>
                     </a>
                 </div>
 
-                <div>
-                    <a href="#menu_delice">
+                <div class="restaurant">
+                    <a href="menu/menu_delice.html">
                         <article class="carte_restaurants">
                             <div class="carte-image"><img class="img_restau" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Délice"></div>
                             <div class="carte-corps">
-                                <h3 class="carte-titre">Le délice des sens</h3>
+                                <div class="pl-coeur">
+                                    <h3 class="carte-titre">Le délice des sens</h3>
+                                    <i class="fa-regular fa-heart coeur"></i>
+                                </div>
                                 <div class="carte-legende">Folie-Méricourt</div>
-                                <div class="coeur"></div>
                             </div>
                         </article>
                     </a>
@@ -111,17 +129,17 @@
         <footer>
             <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood" id="omfpt">
             
-            <ul>
-                <li>
-                    <i class="fa-solid fa-utensils"></i>
+            <ul class="tt-lien">
+                <li class="lien">
+                    <i class="fa-solid fa-utensils icone-footer"></i>
                     <span>Proposer un restaurant</span>
                 </li>
-                <li>
-                    <i class="fa-regular fa-handshake-angle"></i>
+                <li class="lien">
+                    <i class="fa-solid fa-handshake-angle icone-footer"></i>
                     <span>Devenir partenaire</span>
                 </li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
+                <li class="lien">Mentions légales</li>
+                <li class="lien">Contact</li>
             </ul>
         </footer>
 
