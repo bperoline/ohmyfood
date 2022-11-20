@@ -22,6 +22,11 @@ header {
     margin: 0 auto 10px auto;
 }
 
+main {
+    background-color: rgb(242, 242, 242);
+    padding-bottom: 50px;
+}
+
 .tt-titre {
     display: flex;
     flex-direction: column;
@@ -40,10 +45,10 @@ header {
 
 .cci {
     margin: -75px 0 0 0 !important;
-    border-radius: 65px 65px 0 0;
-    background-color: white;
+    border-radius: 60px 60px 0 0 !important;
+    box-shadow: none !important;
     border: none !important;
-    
+    background-color: rgb(242, 242, 242) !important;
 }
 
 .cti {
@@ -62,8 +67,9 @@ h1 {
     padding: 25px 95px 0 0;
 }
 
+
 h2 {
-    color: rgb(196, 196, 196);
+    color: rgb(133, 133, 133);
     font-size: 35px;
     margin-left: 30px;
 }
@@ -83,17 +89,19 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto 45px auto;
-    width: 90%;
+    width: 95%;
 }
 
 .carte-corps {
-    border: 1px solid rgb(196, 196, 196);
+    border: 1px solid rgb(234, 234, 234);
     margin: 10px 0;
-    border-radius: 35px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgb(169, 169, 169) ;
 }
 
 h3 {
-    font-size: 34px;
+    font-size: 28px;
     margin: 10px 0px 8px 25px;
 }
 
@@ -113,6 +121,18 @@ p {
     margin: 0;
 }
 
+button {
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid #ff79da;
+    background-color: #ff79da;
+    color: white;
+    border-radius: 28px;
+    padding: 12px 10px;
+}
 
 
 
@@ -148,6 +168,7 @@ footer {
 
 #omfpt {
     filter: contrast(0%) brightness(190%);
+    width: 110px;
     margin-top: 4%;
     margin-left: 5%;
 }
