@@ -1,0 +1,171 @@
+body {
+    font-size: 16px;
+    margin: 10px auto 0 auto;
+}
+
+header {
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.fleche {
+    font-size: 30px;
+    margin: 5px 0 0 45px;
+    color: black;
+}
+
+#omf {
+    width: 200px;
+    display: flex;
+    margin: 0 auto 10px auto;
+}
+
+.tt-titre {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.cii {
+    height: 90%;
+}
+
+.img_restau {
+    width: 100%;
+    max-height: 450px;
+}
+
+.cci {
+    margin: -75px 0 0 0 !important;
+    border-radius: 65px 65px 0 0;
+    background-color: white;
+    border: none !important;
+    
+}
+
+.cti {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 75px;
+    font-style: italic;
+    margin: 15px 0 0 30px;
+}
+
+.coeur {
+    font-size: 65px;
+    padding: 25px 95px 0 0;
+}
+
+h2 {
+    color: rgb(196, 196, 196);
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.trait {
+    margin-top: -20px;
+    margin-bottom: 35px;
+    margin-left: 30px;
+    border: none;
+    width: 90px;
+    height: 4px;
+    background-color: #99e2d0;
+}
+
+.tt-e {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto 45px auto;
+    width: 90%;
+}
+
+.carte-corps {
+    border: 1px solid rgb(196, 196, 196);
+    margin: 10px 0;
+    border-radius: 35px;
+}
+
+h3 {
+    font-size: 34px;
+    margin: 10px 0px 8px 25px;
+}
+
+.carte-titre {
+
+}
+
+.carte-legende {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 8px 40px 10px 25px;
+}
+ 
+p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    height: 215px;
+}
+
+#omfpt {
+    filter: contrast(0%) brightness(190%);
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+.tt-lien {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lien {
+    background-color: black;
+    border-color: black;
+    color: white;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icone-footer {
+    padding: 0 10px 0 0;
+}
