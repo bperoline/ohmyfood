@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
     margin: 10px auto 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -49,15 +50,18 @@ main {
     box-shadow: none !important;
     border: none !important;
     background-color: rgb(242, 242, 242) !important;
+    display: block !important;
 }
 
 .cti {
     display: flex;
     justify-content: space-between;
+    font-family: 'Shrikhand';
+    font-weight: bold;
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 70px;
     font-style: italic;
     margin: 15px 0 0 30px;
 }
@@ -93,20 +97,23 @@ h2 {
 }
 
 .carte-corps {
-    border: 1px solid rgb(234, 234, 234);
     margin: 10px 0;
     border-radius: 25px;
     background-color: white;
-    box-shadow: 2px 2px 6px rgb(169, 169, 169) ;
+    box-shadow: 2px 2px 6px rgb(169, 169, 169);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.carte-t {
+    width: 90%;
+    text-overflow: ellipsis;
 }
 
 h3 {
     font-size: 28px;
     margin: 10px 0px 8px 25px;
-}
-
-.carte-titre {
-
 }
 
 .carte-legende {
@@ -116,50 +123,64 @@ h3 {
     font-size: 25px;
     margin: 8px 40px 10px 25px;
 }
- 
+
+.carte-p {
+    font-size: 25px;
+    width: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carte-c {
+    width: 0%;
+    overflow: hidden;
+}
+
+.carte-corps:hover .carte-c {
+    width: 10%;
+}
+
+.check {
+    background-color: #99e2d0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 0 25px 25px 0;
+}
+
+.v-check {
+    color: #99e2d0;
+    font-weight: bold;
+    border: 1px solid white ;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 17px;
+    height: 18px;
+    width: 18px;
+}
+
 p {
     margin: 0;
 }
 
-button {
+.commander {
     display: block;
     margin: 0 auto;
     font-size: 25px;
     width: 200px;
     text-align: center;
-    border: 2px solid #ff79da;
-    background-color: #ff79da;
     color: white;
     border-radius: 28px;
     padding: 12px 10px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border: 0px solid;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.commander:hover {
+    opacity: 0.9;
+    box-shadow: 3px 3px 8px rgb(88, 88, 88);
+}
 
 footer {
     background-color: black;
@@ -185,6 +206,11 @@ footer {
     margin-left: 5%;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.lien a {
+    color: white;
+    text-decoration: none;
 }
 
 .icone-footer {
