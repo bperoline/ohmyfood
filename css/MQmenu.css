@@ -1,0 +1,90 @@
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+
+    .tt-titre {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .coeur {
+        font-size: 65px;
+        padding: 25px 80px 0 0;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-left: 30px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 991px) 
+{
+
+    .tt-titre {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .coeur {
+        font-size: 65px;
+        padding: 25px 80px 0 0;
+    }
+
+    .tt-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section {
+        width: 33%;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-left: 30px;
+    }  
+
+    .carte-corps {
+        height: 115px;
+    }
+
+    .carte-t {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    
+    h3 {
+        font-size: 20px;
+        margin: 10px 0px 8px 15px;
+    }
+
+    .carte-legende {
+        font-size: 18px;
+        margin: 8px 40px 10px 15px;
+    }
+
+    .carte-p {
+        font-size: 20px;
+    }
+
+
+}

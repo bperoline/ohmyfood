@@ -32,7 +32,6 @@ main {
     display: flex;
     flex-direction: column;
     height: 500px;
-    margin-bottom: 30px;
 }
 
 .cii {
@@ -41,7 +40,7 @@ main {
 
 .img_restau {
     width: 100%;
-    max-height: 450px;
+    height: 450px;
 }
 
 .cci {
@@ -61,21 +60,30 @@ main {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 52px;
     font-style: italic;
-    margin: 15px 0 0 30px;
+    margin: 15px 0 0 28px;
+}
+
+.h1pg {
+    font-size: 50px !important;
+    margin: 18px 0 0 28px !important;
 }
 
 .coeur {
-    font-size: 65px;
-    padding: 25px 95px 0 0;
+    font-size: 45px;
+    padding: 25px 45px 0 0;
 }
 
+.tt-section {
+    display: flex;
+    flex-direction: column;
+}
 
 h2 {
     color: rgb(133, 133, 133);
-    font-size: 35px;
-    margin-left: 30px;
+    font-size: 30px;
+    margin: 5px 30px 30px 30px;
 }
 
 .trait {
@@ -108,20 +116,24 @@ h2 {
 
 .carte-t {
     width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 23px;
     margin: 10px 0px 8px 25px;
+    text-overflow: ellipsis;
 }
 
 .carte-legende {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 20px;
     margin: 8px 40px 10px 25px;
+    text-overflow: ellipsis;
 }
 
 .carte-p {
@@ -133,12 +145,35 @@ h3 {
 }
 
 .carte-c {
-    width: 0%;
+    width: 0;
     overflow: hidden;
+    margin-left: 10px;
 }
 
 .carte-corps:hover .carte-c {
-    width: 10%;
+    width: 6%;
+    animation: animcc 900ms 100ms normal ease-out forwards;
+    -webkit-animation: animcc 900ms 100ms normal ease-out forwards;
+    -moz-animation: animcc 900ms 100ms normal ease-out forwards;
+}
+
+@keyframes animcc {
+    0% {
+        width: 6% /*32px*/;
+    }
+
+    30% {
+        width: 10%;
+    }
+
+    60% {
+        width: 14%;
+    }
+
+    100% {
+        width: 20% /*90px*/;
+    }
+
 }
 
 .check {
@@ -158,6 +193,29 @@ h3 {
     font-size: 17px;
     height: 18px;
     width: 18px;
+}
+
+.carte-corps:hover .v-check {
+    animation: animcheck 400ms 200ms normal linear forwards ;
+}
+
+@keyframes animcheck {
+    0% {
+        transform: rotate(135deg);
+    }
+
+    30% {
+        transform: rotate(180deg);
+    }
+
+    60% {
+        transform: rotate(225deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
 
 p {
