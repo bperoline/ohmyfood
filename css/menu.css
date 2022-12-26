@@ -1,0 +1,218 @@
+body {
+    font-size: 16px;
+    margin: 10px auto 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.fleche {
+    font-size: 30px;
+    margin: 5px 0 0 45px;
+    color: black;
+}
+
+#omf {
+    width: 200px;
+    display: flex;
+    margin: 0 auto 10px auto;
+}
+
+main {
+    background-color: rgb(242, 242, 242);
+    padding-bottom: 50px;
+}
+
+.tt-titre {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.cii {
+    height: 90%;
+}
+
+.img_restau {
+    width: 100%;
+    max-height: 450px;
+}
+
+.cci {
+    margin: -75px 0 0 0 !important;
+    border-radius: 60px 60px 0 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background-color: rgb(242, 242, 242) !important;
+    display: block !important;
+}
+
+.cti {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Shrikhand';
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 70px;
+    font-style: italic;
+    margin: 15px 0 0 30px;
+}
+
+.coeur {
+    font-size: 65px;
+    padding: 25px 95px 0 0;
+}
+
+
+h2 {
+    color: rgb(133, 133, 133);
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.trait {
+    margin-top: -20px;
+    margin-bottom: 35px;
+    margin-left: 30px;
+    border: none;
+    width: 90px;
+    height: 4px;
+    background-color: #99e2d0;
+}
+
+.tt-e {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto 45px auto;
+    width: 95%;
+}
+
+.carte-corps {
+    margin: 10px 0;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgb(169, 169, 169);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.carte-t {
+    width: 90%;
+    text-overflow: ellipsis;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 10px 0px 8px 25px;
+}
+
+.carte-legende {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 8px 40px 10px 25px;
+}
+
+.carte-p {
+    font-size: 25px;
+    width: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carte-c {
+    width: 0%;
+    overflow: hidden;
+}
+
+.carte-corps:hover .carte-c {
+    width: 10%;
+}
+
+.check {
+    background-color: #99e2d0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 0 25px 25px 0;
+}
+
+.v-check {
+    color: #99e2d0;
+    font-weight: bold;
+    border: 1px solid white ;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 17px;
+    height: 18px;
+    width: 18px;
+}
+
+p {
+    margin: 0;
+}
+
+.commander {
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    border-radius: 28px;
+    padding: 12px 10px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border: 0px solid;
+}
+
+.commander:hover {
+    opacity: 0.9;
+    box-shadow: 3px 3px 8px rgb(88, 88, 88);
+}
+
+footer {
+    background-color: black;
+    height: 215px;
+}
+
+#omfpt {
+    filter: contrast(0%) brightness(190%);
+    width: 110px;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+.tt-lien {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lien {
+    background-color: black;
+    border-color: black;
+    color: white;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lien a {
+    color: white;
+    text-decoration: none;
+}
+
+.icone-footer {
+    padding: 0 10px 0 0;
+}
