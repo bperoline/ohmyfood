@@ -1,6 +1,7 @@
+/* MQ tablette */
+
 @media all and (min-width: 768px) and (max-width: 991px)
 {
-
     .tt-titre {
         margin-bottom: 30px;
     }
@@ -19,20 +20,12 @@
         margin-left: 30px;
     }
 
-
-
-
 }
 
-
-
-
-
-
+/* MQ desktop */
 
 @media screen and (min-width: 991px) 
 {
-
     .tt-titre {
         margin-bottom: 30px;
     }
@@ -69,22 +62,20 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: flex-start;
     }
     
     h3 {
-        font-size: 20px;
+        font-size: 19px;
         margin: 10px 0px 8px 15px;
     }
 
     .carte-legende {
-        font-size: 18px;
-        margin: 8px 40px 10px 15px;
+        font-size: 15px;
+        margin: 8px 0 10px 15px;
     }
 
     .carte-p {
         font-size: 20px;
     }
-
 
 }

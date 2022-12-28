@@ -35,7 +35,7 @@ main {
 }
 
 .cii {
-    height: 90%;
+    height: 96%;
 }
 
 .img_restau {
@@ -60,19 +60,19 @@ main {
 }
 
 h1 {
-    font-size: 52px;
+    font-size: 30px;
     font-style: italic;
     margin: 15px 0 0 28px;
 }
 
 .h1pg {
-    font-size: 50px !important;
+    font-size: 30px !important;
     margin: 18px 0 0 28px !important;
 }
 
 .coeur {
-    font-size: 45px;
-    padding: 25px 45px 0 0;
+    font-size: 30px;
+    padding: 20px 30px 0 0;
 }
 
 .tt-section {
@@ -118,21 +118,24 @@ h2 {
     width: 90%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 h3 {
     font-size: 23px;
     margin: 10px 0px 8px 25px;
+}
+
+.carte-titre {
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .carte-legende {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-size: 20px;
     margin: 8px 40px 10px 25px;
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
@@ -152,14 +155,14 @@ h3 {
 
 .carte-corps:hover .carte-c {
     width: 6%;
-    animation: animcc 900ms 100ms normal ease-out forwards;
-    -webkit-animation: animcc 900ms 100ms normal ease-out forwards;
-    -moz-animation: animcc 900ms 100ms normal ease-out forwards;
+    animation: animcc 200ms 100ms normal ease-out forwards;
+    -webkit-animation: animcc 200ms 100ms normal ease-out forwards;
+    -moz-animation: animcc 200ms 100ms normal ease-out forwards;
 }
 
 @keyframes animcc {
     0% {
-        width: 6% /*32px*/;
+        width: 6%;
     }
 
     30% {
@@ -171,7 +174,7 @@ h3 {
     }
 
     100% {
-        width: 20% /*90px*/;
+        width: 20%;
     }
 
 }
@@ -196,7 +199,7 @@ h3 {
 }
 
 .carte-corps:hover .v-check {
-    animation: animcheck 400ms 200ms normal linear forwards ;
+    animation: animcheck 300ms 100ms normal linear forwards ;
 }
 
 @keyframes animcheck {
