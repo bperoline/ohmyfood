@@ -86,6 +86,30 @@ h2 {
     margin: 5px 30px 30px 30px;
 }
 
+.entrees {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 700ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.plats {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1200ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.desserts {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1700ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
 .trait {
     margin-top: -20px;
     margin-bottom: 35px;
@@ -96,12 +120,70 @@ h2 {
     background-color: #99e2d0;
 }
 
+.trait1 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 850ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.trait2 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1350ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.trait3 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1850ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
 .tt-e {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto 45px auto;
     width: 95%;
+}
+
+.tte1 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.tte2 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1500ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.tte3 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 2000ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animtte {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .carte-corps {

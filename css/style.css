@@ -4,6 +4,71 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.chargement {
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;  
+    z-index: 100;
+    opacity: 1;
+    animation: disparition 100ms 3500ms forwards;
+}
+
+@keyframes disparition {
+    0% {
+        transform: scale(1);
+        background-color: white;
+    }
+
+    100% {
+        transform: scale(0);
+        background-color: transparent;
+    }
+
+}
+
+.point {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    position: fixed;
+    animation: pre-chargement 1000ms ease-in-out alternate infinite;
+}
+
+@keyframes pre-chargement {
+    0% {
+        background-color: #99e2d0;
+    }
+
+    20%{
+        background-color: #e7d3ff;
+    }
+
+    40% {
+        background-color: #9356DC;
+    }
+
+    60% {
+        background-color: #99e2d0;
+    }
+
+    80% {
+        background-color: #e7d3ff;
+    }
+
+    100% { 
+        background-color: #9356DC;
+        transform: scale(2); 
+    }
+}
+
 header {
     width: auto;
     height: 330px;
