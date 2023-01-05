@@ -1,7 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+
 body {
     font-size: 16px;
     margin: 10px auto 0 auto;
     font-family: 'Roboto', sans-serif;
+}
+
+.chargement {
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;  
+    z-index: 100;
+    opacity: 1;
+    animation: disparition 100ms 3000ms forwards;
+}
+
+@keyframes disparition {
+    0% {
+        transform: scale(1);
+        background-color: white;
+    }
+
+    100% {
+        transform: scale(0);
+        background-color: transparent;
+    }
+
+}
+
+.point {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    position: fixed;
+    animation: pre-chargement 1000ms ease-in-out alternate infinite;
+}
+
+@keyframes pre-chargement {
+    0% {
+        background-color: #99e2d0;
+    }
+
+    20%{
+        background-color: #e7d3ff;
+    }
+
+    40% {
+        background-color: #9356DC;
+    }
+
+    60% {
+        background-color: #99e2d0;
+    }
+
+    80% {
+        background-color: #e7d3ff;
+    }
+
+    100% { 
+        background-color: #9356DC;
+        transform: scale(2); 
+    }
 }
 
 header {
@@ -9,6 +76,11 @@ header {
     height: 330px;
     display: flex;
     flex-direction: column;
+}
+
+.header-img {
+    position: relative;
+    box-shadow: 0px 4px 4px #0000002b;
 }
 
 #omf {
@@ -63,7 +135,7 @@ h1 {
     width: 200px;
     height: 32px;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    border-radius: 17px;
+    border-radius: 19px;
     padding: 3px 6px;
     display: flex;
     align-items: center;
@@ -172,6 +244,7 @@ ul {
 }
 
 .carte-image {
+    position: relative;
     width: 100%;
     height: 150px;
 }
@@ -189,15 +262,15 @@ ul {
     z-index: 2;
     border: 1px solid #99e2d0;
     background-color: #99e2d0;
-    margin-top: -140px;
-    margin-left: 80%;
     color: rgb(14, 117, 74);
     border-radius: 2px;
-    width: 70px;
-    height: 20px;
+    width: 72px;
+    height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 10px;
+    right: 10px;
 }
 
 .carte-corps {
@@ -226,7 +299,7 @@ ul {
 .fa-heart:hover:after {
     font-weight: 600;
     color: transparent;
-    transition: 600ms ease-in-out;
+    transition: 800ms ease-in-out;
     background-image: linear-gradient(#9356DC, #FF79DA) !important;
     -webkit-background-clip: text;
 }

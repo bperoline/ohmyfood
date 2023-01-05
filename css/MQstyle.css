@@ -1,0 +1,44 @@
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+    .carte {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .restaurant {
+        width: 46%;
+    }
+
+    .restaurant a {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 991px) 
+{
+    .carte {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .restaurant {
+        width: 23%;
+    }
+
+    .restaurant a {
+        width: 100%;
+    }
+
+    .carte-titre {
+        margin: 10px 0 18px 0;
+    }
+
+    .coeur {
+        padding: 10px 10px 0 0;
+    }
+
+}

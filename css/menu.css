@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+
 body {
     font-size: 16px;
     margin: 10px auto 0 auto;
@@ -32,16 +34,15 @@ main {
     display: flex;
     flex-direction: column;
     height: 500px;
-    margin-bottom: 30px;
 }
 
 .cii {
-    height: 90%;
+    height: 96%;
 }
 
 .img_restau {
     width: 100%;
-    max-height: 450px;
+    height: 450px;
 }
 
 .cci {
@@ -61,21 +62,54 @@ main {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 24px;
     font-style: italic;
-    margin: 15px 0 0 30px;
+    margin: 15px 0 0 28px;
+}
+
+h1 .h1pg {
+    font-size: 24px;
+    margin: 18px 0 0 28px;
 }
 
 .coeur {
-    font-size: 65px;
-    padding: 25px 95px 0 0;
+    font-size: 30px;
+    padding: 20px 30px 0 0;
 }
 
+.tt-section {
+    display: flex;
+    flex-direction: column;
+}
 
 h2 {
     color: rgb(133, 133, 133);
-    font-size: 35px;
-    margin-left: 30px;
+    font-size: 30px;
+    margin: 5px 30px 30px 30px;
+}
+
+.entrees {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 700ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.plats {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1200ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.desserts {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1700ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
 }
 
 .trait {
@@ -83,9 +117,33 @@ h2 {
     margin-bottom: 35px;
     margin-left: 30px;
     border: none;
-    width: 90px;
+    width: 70px;
     height: 4px;
     background-color: #99e2d0;
+}
+
+.trait1 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 850ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.trait2 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1350ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.trait3 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1850ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
 }
 
 .tt-e {
@@ -94,6 +152,40 @@ h2 {
     justify-content: space-around;
     margin: 0 auto 45px auto;
     width: 95%;
+}
+
+.tte1 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.tte2 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 1500ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+.tte3 {
+    opacity: 0;
+    animation-duration: 1000ms;
+    animation-delay: 2000ms;
+    animation-name: animtte;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animtte {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .carte-corps {
@@ -108,20 +200,27 @@ h2 {
 
 .carte-t {
     width: 90%;
-    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 20px;
     margin: 10px 0px 8px 25px;
 }
 
+.carte-titre {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .carte-legende {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 25px;
+    font-size: 15px;
     margin: 8px 40px 10px 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .carte-p {
@@ -133,12 +232,35 @@ h3 {
 }
 
 .carte-c {
-    width: 0%;
+    width: 0;
     overflow: hidden;
+    margin-left: 10px;
 }
 
 .carte-corps:hover .carte-c {
-    width: 10%;
+    width: 6%;
+    animation: animcc 200ms 100ms normal ease-out forwards;
+    -webkit-animation: animcc 200ms 100ms normal ease-out forwards;
+    -moz-animation: animcc 200ms 100ms normal ease-out forwards;
+}
+
+@keyframes animcc {
+    0% {
+        width: 6%;
+    }
+
+    30% {
+        width: 10%;
+    }
+
+    60% {
+        width: 14%;
+    }
+
+    100% {
+        width: 20%;
+    }
+
 }
 
 .check {
@@ -158,6 +280,29 @@ h3 {
     font-size: 17px;
     height: 18px;
     width: 18px;
+}
+
+.carte-corps:hover .v-check {
+    animation: animcheck 300ms 100ms normal linear forwards ;
+}
+
+@keyframes animcheck {
+    0% {
+        transform: rotate(135deg);
+    }
+
+    30% {
+        transform: rotate(180deg);
+    }
+
+    60% {
+        transform: rotate(225deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
 
 p {
