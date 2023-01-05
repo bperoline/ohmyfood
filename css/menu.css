@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+
 body {
     font-size: 16px;
     margin: 10px auto 0 auto;
@@ -60,14 +62,14 @@ main {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 24px;
     font-style: italic;
     margin: 15px 0 0 28px;
 }
 
-.h1pg {
-    font-size: 30px !important;
-    margin: 18px 0 0 28px !important;
+h1 .h1pg {
+    font-size: 24px;
+    margin: 18px 0 0 28px;
 }
 
 .coeur {
@@ -115,7 +117,7 @@ h2 {
     margin-bottom: 35px;
     margin-left: 30px;
     border: none;
-    width: 90px;
+    width: 70px;
     height: 4px;
     background-color: #99e2d0;
 }
@@ -203,7 +205,7 @@ h2 {
 }
 
 h3 {
-    font-size: 23px;
+    font-size: 20px;
     margin: 10px 0px 8px 25px;
 }
 
@@ -214,7 +216,7 @@ h3 {
 }
 
 .carte-legende {
-    font-size: 20px;
+    font-size: 15px;
     margin: 8px 40px 10px 25px;
     white-space: nowrap;
     overflow: hidden;

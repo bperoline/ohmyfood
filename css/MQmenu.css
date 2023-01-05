@@ -7,12 +7,16 @@
     }
 
     h1 {
-        font-size: 70px;
+        font-size: 50px;
+    }
+
+    h1 .h1pg {
+        font-size: 50px;
     }
 
     .coeur {
-        font-size: 65px;
-        padding: 25px 80px 0 0;
+        font-size: 50px;
+        padding: 25px 60px 0 0;
     }
 
     h2 {
@@ -31,7 +35,11 @@
     }
 
     h1 {
-        font-size: 70px;
+        font-size: 60px;
+    }
+
+    h1 .h1pg {
+        font-size: 60px;
     }
 
     .coeur {
@@ -55,7 +63,7 @@
     }  
 
     .carte-corps {
-        height: 115px;
+        height: 100px;
     }
 
     .carte-t {
