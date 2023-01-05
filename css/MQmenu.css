@@ -1,0 +1,89 @@
+/* MQ tablette */
+
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+    .tt-titre {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h1 .h1pg {
+        font-size: 50px;
+    }
+
+    .coeur {
+        font-size: 50px;
+        padding: 25px 60px 0 0;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-left: 30px;
+    }
+
+}
+
+/* MQ desktop */
+
+@media screen and (min-width: 991px) 
+{
+    .tt-titre {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h1 .h1pg {
+        font-size: 60px;
+    }
+
+    .coeur {
+        font-size: 65px;
+        padding: 25px 80px 0 0;
+    }
+
+    .tt-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section {
+        width: 33%;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-left: 30px;
+    }  
+
+    .carte-corps {
+        height: 100px;
+    }
+
+    .carte-t {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    h3 {
+        font-size: 19px;
+        margin: 10px 0px 8px 15px;
+    }
+
+    .carte-legende {
+        font-size: 15px;
+        margin: 8px 0 10px 15px;
+    }
+
+    .carte-p {
+        font-size: 20px;
+    }
+
+}

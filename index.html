@@ -2,14 +2,26 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/MQstyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <title>Ohmyfood</title>
     </head>
 
     <body>
+
+        <div class="chargement">
+            <div class="chargement-element">
+                <span class="point"></span>
+            </div>
+        </div>
+
         <header>
-            <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood" id="omf">
+            <div class="header-img">
+                <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood" id="omf">
+            </div>
             <div class="loca">
                 <i class="fa-solid fa-location-dot icone-loca"></i>
                 <span>Paris, Belleville</span>
@@ -20,7 +32,7 @@
                 <h1 class="c2h1">vous convient</h1>
                 <div class="texte-tr-un">Découvrez des restaurants d'exception,</div>
                 <div class="texte-tr-deux">sélectionnés par nos soins.</div>
-                <a href="#restaurant" id="explore">Explorer nos restaurants</a>
+                <a href="#t-restaurant" id="explore">Explorer nos restaurants</a>
             </div>
         </header>
 
@@ -53,13 +65,14 @@
             <section class="s-deux">
                 <h2 id="t-restaurant">Restaurants</h2>
 
-                <div>
+                <div class="carte">
+                    
                     <div class="restaurant">
                         <a href="menu/menu_palette.html">
                             <article class="carte_restaurants">
                                 <div class="carte-image">
                                     <img class="img_restau" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Palette">
-                                    <div class="nv">Nouveau</div>
+                                    <span class="nv">Nouveau</span>
                                 </div>
                                 <div class="carte-corps">
                                     <div class="pl-coeur">
@@ -71,15 +84,13 @@
                             </article>
                         </a>
                     </div>
-                </div>
 
-                <div>
                     <div class="restaurant">
                         <a href="menu/menu_enchantee.html">
                             <article class="carte_restaurants">
                                 <div class="carte-image">
                                     <img class="img_restau" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Enchantée">
-                                    <div class="nv">Nouveau</div>
+                                    <span class="nv">Nouveau</span>
                                 </div>
                                 <div class="carte-corps">
                                     <div class="pl-coeur">
@@ -91,38 +102,37 @@
                             </article>
                         </a>
                     </div>
-                </div>
 
-                <div class="restaurant">
-                    <a href="menu/menu_francaise.html">
-                        <article class="carte_restaurants">
-                            <div class="carte-image"><img class="img_restau" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Française"></div>
-                            <div class="carte-corps">
-                                <div class="pl-coeur">
-                                    <h3 class="carte-titre">À la française</h3>
-                                    <i class="fa-regular fa-heart coeur"></i>
+                    <div class="restaurant">
+                        <a href="menu/menu_francaise.html">
+                            <article class="carte_restaurants">
+                                <div class="carte-image"><img class="img_restau" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Française"></div>
+                                <div class="carte-corps">
+                                    <div class="pl-coeur">
+                                        <h3 class="carte-titre">À la française</h3>
+                                        <i class="fa-regular fa-heart coeur"></i>
+                                    </div>
+                                    <div class="carte-legende">Cité Rouge</div>
                                 </div>
-                                <div class="carte-legende">Cité Rouge</div>
-                            </div>
-                        </article>
-                    </a>
-                </div>
+                            </article>
+                        </a>
+                    </div>
 
-                <div class="restaurant">
-                    <a href="menu/menu_delice.html">
-                        <article class="carte_restaurants">
-                            <div class="carte-image"><img class="img_restau" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Délice"></div>
-                            <div class="carte-corps">
-                                <div class="pl-coeur">
-                                    <h3 class="carte-titre">Le délice des sens</h3>
-                                    <i class="fa-regular fa-heart coeur"></i>
+                    <div class="restaurant">
+                        <a href="menu/menu_delice.html">
+                            <article class="carte_restaurants">
+                                <div class="carte-image"><img class="img_restau" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Délice"></div>
+                                <div class="carte-corps">
+                                    <div class="pl-coeur">
+                                        <h3 class="carte-titre">Le délice des sens</h3>
+                                        <i class="fa-regular fa-heart coeur"></i>
+                                    </div>
+                                    <div class="carte-legende">Folie-Méricourt</div>
                                 </div>
-                                <div class="carte-legende">Folie-Méricourt</div>
-                            </div>
-                        </article>
-                    </a>
+                            </article>
+                        </a>
+                    </div>
                 </div>
-
             </section>
         </main>
 
@@ -139,7 +149,7 @@
                     <span>Devenir partenaire</span>
                 </li>
                 <li class="lien">Mentions légales</li>
-                <li class="lien"><a href="mailto: ohmyfood@orange.fr">Contact</a></li>
+                <li class="lien"><a href="mailto:ohmyfood@orange.fr">Contact</a></li>
             </ul>
         </footer>
 
